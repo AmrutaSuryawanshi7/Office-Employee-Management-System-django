@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+
+<div class="container-fluid px-0">
+    <!-- <img src="https://media.istockphoto.com/photos/contact-us-picture-id1049658692?k=20&m=1049658692&s=612x612&w=0&h=z3sXVbzDit8RKnsC0ihEuFub42FqfmbRcP4vWHOKLK4=" class="d-block w-100" alt="contact-us"> -->
+    <!-- <img src="https://media.istockphoto.com/photos/representation-of-digital-communication-channels-picture-id482690487?k=20&m=482690487&s=612x612&w=0&h=1PS-_sEwbqiIPfzbk239Z1yFlcVI4iBI3WUZy3Bm9hg=" class="d-block w-100" alt="contact-us"> -->
+    <img src="static\img\contact.jpg" class="d-block w-100" alt="contact-us">
+    <!-- <img src="https://media.istockphoto.com/photos/contact-us-support-service-and-information-connect-concept-females-picture-id1372134479?b=1&k=20&m=1372134479&s=170667a&w=0&h=esbm5bfET9f50ME66zl-43xeaos13fiXrUHlgtt70Mo=" alt="contact-us"> -->
+</div>
+
+<form action="/contact" method="post">
+    {% csrf_token %}
+    <div class="container my-4">
+        <h3 class="text-center">Contact us</h3>
+        <div class="mb-3">
+            <label for="name" class="form-label">Enter your name</label>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Full name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Enter your email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Enter your phone number</label>
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Phone number">
+        </div>
+        <div class="mb-3">
+            <label for="msg" class="form-label">Enter your message for me</label>
+            <textarea class="form-control" id="msg" name="msg" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+
+{% endblock body %}

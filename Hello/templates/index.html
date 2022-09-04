@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home{% endblock title %}
+
+
+{% block body %}
+
+<!-- Images slider -->
+<!-- <div class="contain" style="margin: 20px;"> -->
+<div class="contain fluid my-0 mx-0">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- <img src="static\img\1.jpg" class="d-block" alt="first-img"> -->
+                <img src="https://cdn.dribbble.com/userupload/916994/file/original-ca8e3e10c6b8b0ff3441007d69c93822.jpg?compress=1&resize=1600x600&vertical=top" class="d-block" alt="first-img">
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="static\img\2.jpg" class="d-block" alt="second-img"> -->
+                <img src="https://cdn.dribbble.com/userupload/1862809/file/original-68837ea47128c53ee372a01be405bb2f.jpg?compress=1&resize=1600x600&vertical=top" class="d-block" alt="second-img">
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="static\img\3.jpg" class="d-block" alt="third-img"> -->
+                <img src="https://cdn.dribbble.com/userupload/1861044/file/original-11fa77e13e7be898a26d46532c9a8d77.jpg?compress=1&resize=1600x600&vertical=top" class="d-block" alt="third-img">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Thumbnail images -->
+<div class="container my-4">
+
+    <h1 class="my-4 text-center">Select any IceCream from below options</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="http://cdn.akc.org/content/article-body-image/siberian_husky_cute_puppies.jpg" class="d-block" alt="first-img">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="http://cdn.akc.org/content/article-body-image/golden_retriever_cute_puppies.jpg" class="d-block" alt="first-img">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="http://cdn.akc.org/content/article-body-image/poodle_cute_puppies.jpg" class="d-block" alt="first-img">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://cdn.dribbble.com/users/1044993/screenshots/17246782/media/59a2825d93c780ff003226d65ae786f2.png?compress=1&resize=450x338&vertical=top" class="d-block" alt="first-img">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://cdn.dribbble.com/users/2306/screenshots/15989096/media/21c3304c00f493b4ee0d92bd2021120f.png?compress=1&resize=450x338&vertical=top" class="d-block" alt="first-img">
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <!-- <img src="static\img\3.jpg" class="d-block" alt="first-img"> -->
+                <img src="https://cdn.dribbble.com/users/1787323/screenshots/14448645/media/438b3de16ede042222960eba6039a45d.png?compress=1&resize=450x338&vertical=top" class="d-block" alt="first-img">
+
+                <div class="card-body">
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body %}
