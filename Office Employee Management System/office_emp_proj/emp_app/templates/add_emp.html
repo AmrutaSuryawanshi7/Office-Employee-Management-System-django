@@ -16,7 +16,9 @@
 <body>
     <div class="container">
         <!-- Content here -->
-        <h1>Add Employee</h1>
+        <h1><a href='/'>Office Employee Management System</a></h1>
+        <hr>        
+        <h2>Add Employee</h2>
         <hr>
 
         <form action="/add_emp" method="post">
@@ -35,32 +37,32 @@
 
             <div class="mb-3">
               <label for="dept" class="form-label">Department</label>
-              <input type="text" class="form-control" name='dept_name' id="dept" value="{{dept}}">
+              <input type="number" class="form-control" name='dept_name' id="dept" value="{{dept}}">
             </div>
 
-            <div class="mb-3">
+            {% comment %} <div class="mb-3">
               <label for="location" class="form-label">Location</label>
               <input type="text" class="form-control" name='dept_location' id="location" value="{{location}}">
-            </div>
+            </div>  {% endcomment %}
 
             <div class="mb-3">
               <label for="salary" class="form-label">Salary</label>
-              <input type="text" class="form-control" name='sal' id="salary" value="{{salary}}">
+              <input type="number" class="form-control" name='sal' id="salary" value="{{salary}}">
             </div>
 
             <div class="mb-3">
               <label for="bonus" class="form-label">Bonus</label>
-              <input type="text" class="form-control" name='bonus' id="bonus" value="{{bonus}}">
+              <input type="number" class="form-control" name='bonus' id="bonus" value="{{bonus}}">
             </div>
 
             <div class="mb-3">
               <label for="role_name" class="form-label">Role</label>
-              <input type="text" class="form-control" name='role' id="role_name" value="{{role}}">
+              <input type="number" class="form-control" name='role' id="role_name" value="{{role}}">
             </div>
 
             <div class="mb-3">
               <label for="phone" class="form-label">Phone Number</label>
-              <input type="text" class="form-control" name='phone_no' id="phone" value="{{phone}}">
+              <input type="number" class="form-control" name='phone_no' id="phone" value="{{phone}}">
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

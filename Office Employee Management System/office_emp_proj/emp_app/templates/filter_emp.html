@@ -16,8 +16,35 @@
 <body>
     <div class="container">
         <!-- Content here -->
-        <h1>Filter Employee Details</h1>
+        <h1><a href='/'>Office Employee Management System</a></h1>
         <hr>
+        <h2>Filter Employee Details</h2>
+        <hr>
+
+        <form action="/filter_emp" method="post">
+
+            {% csrf_token %}
+
+            <div class="mb-3">
+              <label for="first_name" class="form-label">Employee First/Last Name</label>
+              <input type="text" class="form-control" name="first_n" id="first_name" value="{{first_name}}">
+            </div>
+
+            <div class="mb-3">
+              <label for="dept" class="form-label">Department</label>
+              <input type="text" class="form-control" name='dept_name' id="dept" value="{{dept}}">
+            </div>
+
+            <div class="mb-3">
+              <label for="role_name" class="form-label">Role</label>
+              <input type="text" class="form-control" name='role' id="role_name" value="{{role}}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </form>
+
+
+
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

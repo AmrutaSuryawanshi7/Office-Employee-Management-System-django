@@ -16,8 +16,22 @@
 <body>
     <div class="container">
         <!-- Content here -->
-        <h1>Remove Employee</h1>
+        <h1><a href='/'>Office Employee Management System</a></h1>
+        <hr>        
+        <h2>Remove Employee</h2>
         <hr>
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Choose Employee To Be Removed
+            </button>
+            <ul class="dropdown-menu">
+                {% for emp in all_emps_to_remove %}
+                <li><a class="dropdown-item" href="/remove_emp/{{emp.id}}">{{emp.first_name}} {{emp.last_name}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
